@@ -8,3 +8,4 @@ Feature: ZipCode to City Data in US
     Given path 'US/22030'
     When method get
     Then status 200
+    Then match response.country == 'United States'
